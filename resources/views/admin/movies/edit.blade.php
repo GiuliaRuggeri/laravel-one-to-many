@@ -1,10 +1,10 @@
 @extends('layouts.admin')
 
 @section('content')
-    <div class="bg-black">
+    <div class="">
         <div class="container">
             <div class="row">
-                <h2 class="text-white">Edit movie</h2>
+                <h2 class="">Edit movie</h2>
                 @if ($errors->any())
                     <div class="alert alert-danger">
                         <ul>
@@ -16,7 +16,7 @@
                 @endif
             </div>
             <div class="row">
-                <form action="{{ route('admin.movies.update', $movie->id) }}" method="POST" class="text-white">
+                <form action="{{ route('admin.movies.update', $movie->id) }}" method="POST" class="">
                     @csrf
                     @method('PUT')
                     <div class="mb-3">

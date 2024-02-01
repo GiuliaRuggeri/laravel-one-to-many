@@ -44,13 +44,25 @@
 							<li class="nav-item">
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.movies.index' ? 'bg-secondary' : '' }}"
                                     href="{{ route('admin.movies.index') }}">
-                                    <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Movies List
+                                    <i class="fa-solid fa-rectangle-list fa-lg fa-fw"></i> Movies List
                                 </a>
                             </li>
 							<li class="nav-item">
                                 <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.movies.create' ? 'bg-secondary' : '' }}"
                                     href="{{ route('admin.movies.create') }}">
-                                    <i class="fa-solid fa-tachometer-alt fa-lg fa-fw"></i> Create movie
+                                    <i class="fa-solid fa-square-plus fa-lg fa-fw"></i> Create new movie
+                                </a>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.types.index' ? 'bg-secondary' : '' }}"
+                                    href="{{ route('admin.types.index') }}">
+                                    <i class="fa-solid fa-rectangle-list fa-lg fa-fw"></i> Types list
+                                </a>
+                            </li>
+							<li class="nav-item">
+                                <a class="nav-link text-white {{ Route::currentRouteName() == 'admin.types.create' ? 'bg-secondary' : '' }}"
+                                    href="{{ route('admin.types.create') }}">
+                                    <i class="fa-solid fa-square-plus fa-lg fa-fw"></i> Create new type
                                 </a>
                             </li>
 

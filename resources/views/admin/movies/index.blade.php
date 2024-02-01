@@ -7,6 +7,9 @@
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header text-center">{{ $movie->title }}</div>
+                        <h6 class="card-subtitle mb-2 text-muted mt-2 ms-2">
+                            {{ $movie->type ? $movie->type->name : 'no type' }}
+                        </h6>
                         <div class="card-body d-flex flex-column align-items-center">
                             <img class="img-fluid w-50" src="{{ $movie->poster_image }}" alt="">
                             <p class="mt-2">{{ $movie->description }}</p>
